@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+}
+
+main {
+    max-width: 100ww;
+    height: 60vh;
+    background-color: hsl(330, 9%, 96%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px auto 50px;
+    grid-template-areas:
+        "header header header"
+        "content content ."
+        "footer footer footer";
+}
+
+header {
+    background-color: hsl(330, 9%, 96%);
+    grid-area: header;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px gray;
+    border-style: none none solid none;
+}
+
+header .instagram {
+    font-family: 'Lobster Two', cursive;
+    font-size: 28px;
+}
+
+input[type=text] {
+    width: 20vw;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    padding: 5px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px;
+    text-align: center;
+
+}
+
+.nav i {
+    margin-left: 22px;
+    font-size: 28px;
+}
+
+.nav i:hover {
+    cursor: pointer;
+    background-color: rgb(158, 149, 149);
+}
+
+.nav img {
+    width: 2ww;
+    height: 5vh;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+
+.nav img:hover {
+    cursor: pointer;
+    background-color: rgb(158, 149, 149);
+}
+
+content {
+    background-color: hsl(330, 9%, 96%);
+    grid-area: content;
+    display: flex;
+    justify-content: space-around;
+}
+
+figure img {
+    width: 13vw;
+    height: 30vh;
+    border-radius: 50%;
+}
+
+.info {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#bearbaite {
+    width: 12vw;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    padding: 5px;
+    font-size: 14px;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+#bearbaite::placeholder {
+    color: black;
+}
+
+.info i {
+    font-size: 30px;
+}
+
+#abo {
+    font-size: 12px;
+}
+
+#web a {
+    text-decoration: none;
+}
+
+footer {
+    background-color: hsl(330, 9%, 96%);
+    grid-area: footer;
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid gray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+footer>div {
+    margin-top: 2vh;
+
+}
+
+.altnav a:hover {
+    cursor: pointer;
+    background-color: rgb(158, 149, 149);
+
+}
+
+.altnav a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.63);
+}
+
+@media screen and (max-widht:600px) {
+    
+}
